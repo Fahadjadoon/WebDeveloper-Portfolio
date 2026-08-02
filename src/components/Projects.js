@@ -12,7 +12,7 @@ const projectsData = [
     shortDesc: "A bespoke corporate platform for Saudi market sustainability consulting, featuring custom-integrated EHS auditing workflows.",
     longDesc: "Engineered a high-performance corporate platform designed for the Saudi market. Developed using a combination of WordPress and Elementor, enhanced with custom HTML, CSS, and JavaScript for a unique, responsive user experience. Focused on creating a professional digital ecosystem that highlights sustainability consulting and government-approved EHS auditing services while ensuring fast load times and clean content management.",
     tags: ["WordPress", "Elementor", "Custom Frontend"],
-    demoUrl: "#",
+    demoUrl: "https://vekr.uk/",
     githubUrl: "#",
     images: ["/projects/Vekr-1.png", "/projects/Vekr-2.png", "/projects/Vekr-3.png"]
   },
@@ -24,7 +24,7 @@ const projectsData = [
     shortDesc: "A professional corporate platform for a USA-based security firm, blending advanced surveillance technology with strategic risk management services.",
     longDesc: "Developed a comprehensive digital presence for a USA-based security company. Architected the platform using WordPress, Elementor, and custom-coded components to effectively showcase their full range of residential, commercial, and industrial security solutions. The focus was on building a reliable, professional-grade interface that reflects their commitment to technology-driven protection, intelligent monitoring, and 24/7 operational readiness.",
     tags: ["WordPress", "Elementor", "Custom Frontend"],
-    demoUrl: "#",
+    demoUrl: "https://3rdeyehq.us/",
     githubUrl: "#",
     images: ["/projects/3rdeye-1.png", "/projects/3rdeye-2.png", "/projects/3rdeye-3.png", "/projects/3rdeye-4.png", "/projects/3rdeye-5.png", "/projects/3rdeye-6.png"]
   },
@@ -36,7 +36,7 @@ const projectsData = [
     shortDesc: "A premier construction and contracting portal for the Saudi market, showcasing large-scale infrastructure capabilities.",
     longDesc: "Developed a high-impact corporate website for a leading construction powerhouse in Saudi Arabia. Built using WordPress and Elementor with custom development, the platform serves as a digital showcase for large-scale commercial, industrial, and infrastructure projects. The focus was on creating a modern, reliable interface that emphasizes precision, safety, and innovation while effectively presenting their world-class engineering portfolio.",
     tags: ["WordPress", "Elementor", "Custom Frontend"],
-    demoUrl: "#",
+    demoUrl: "https://raakco.com/",
     githubUrl: "#",
     images: ["/projects/Raakco-1.png", "/projects/Raakco-2.png", "/projects/Raakco-3.png"]
   },
@@ -48,7 +48,7 @@ const projectsData = [
     shortDesc: "A high-end, custom-coded digital platform for a Pakistan-based technology agency serving a global client base.",
     longDesc: "Engineered a bespoke, custom-coded website for a technology firm specializing in web applications, AI-driven tools, and marketing strategies. The project focused on building a clean, performant, and scalable digital experience that reflects their core philosophy of making business growth smart and sustainable for clients worldwide. Developed with a focus on custom architecture to ensure a unique, fast, and highly responsive interface.",
     tags: ["Custom Development", "JavaScript", "Performance"],
-    demoUrl: "#",
+    demoUrl: "https://www.secondchapter.solutions/",
     githubUrl: "#",
     images: ["/projects/SC-1.png", "/projects/SC-2.png", "/projects/SC-3.png", "/projects/SC-4.png"]
   },
@@ -60,7 +60,7 @@ const projectsData = [
     shortDesc: "A high-end fashion e-commerce platform built on WordPress and WooCommerce, featuring a luxury shopping experience.",
     longDesc: "Engineered a sophisticated fashion retail platform using WordPress and WooCommerce to handle luxury pret, ready-to-wear, and accessories collections. The build focuses on seamless product management, intuitive navigation, and a high-performance checkout process tailored to deliver a premium retail experience for a modern fashion brand.",
     tags: ["WordPress", "WooCommerce", "E-commerce"],
-    demoUrl: "#",
+    demoUrl: "https://krosskulture.com/",
     githubUrl: "#",
     images: ["/projects/Ecommerce-1.png", "/projects/Ecommerce-2.png", "/projects/Ecommerce-3.png"]
   },
@@ -72,7 +72,7 @@ const projectsData = [
     shortDesc: "A professional consultancy platform built with WordPress and ACF to showcase international-standard environmental solutions.",
     longDesc: "Developed a robust digital platform for a premier consultancy firm trusted by major global organizations like the World Bank and UNDP. The build utilizes WordPress, Elementor, and Advanced Custom Fields (ACF) to provide a flexible and content-rich experience that highlights their multidisciplinary environmental and social expertise on an international scale.",
     tags: ["WordPress", "ACF", "Elementor"],
-    demoUrl: "#",
+    demoUrl: "https://stepspakistan.com/",
     githubUrl: "#",
     images: ["/projects/Steps-1.png", "/projects/Steps-2.png", "/projects/Steps-3.png", "/projects/Steps-4.png"]
   },
@@ -84,7 +84,7 @@ const projectsData = [
     shortDesc: "A clean, impactful WordPress platform designed to showcase art preservation and cultural impact.",
     longDesc: "Developed a refined and accessible WordPress website for a major cultural institution. The project focused on a clean, intuitive layout that effectively conveys the organization's mission to preserve art, inspire the public, and shape future cultural discourse through a seamless digital presence.",
     tags: ["WordPress", "CMS", "Web Development"],
-    demoUrl: "#",
+    demoUrl: "https://www.getty.edu/",
     githubUrl: "#",
     images: ["/projects/Getty-1.png", "/projects/Getty-2.png"]
   },
@@ -96,7 +96,7 @@ const projectsData = [
     shortDesc: "A sleek, professional web presence for a technology-driven company, featuring custom-coded components and optimized architecture.",
     longDesc: "Built a high-performance corporate platform for a tech-focused company using a blend of WordPress, Elementor, and custom-coded elements. The site is engineered for speed and professional impact, effectively showcasing the company’s technical expertise through a clean, modern, and highly responsive user interface designed for scalability.",
     tags: ["WordPress", "Elementor", "Custom Code"],
-    demoUrl: "#",
+    demoUrl: "https://savvytechnologies.com/",
     githubUrl: "#",
     images: ["/projects/Savvy-1.png", "/projects/Savvy-2.png"]
   },
