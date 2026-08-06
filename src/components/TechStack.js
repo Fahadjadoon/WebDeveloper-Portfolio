@@ -41,7 +41,7 @@ export default function TechStack() {
       duration: 45,
       direction: "left",
       planets: [
-        { name: "BootStrap", x: 0, y: -150, logo: "/tech-logos/BootStrap.png" },
+        { name: "BootStrap", x: 0, y: -150, logo: "/tech-logos/Bootstrap.png" },
         { name: "GitHub", x: 150, y: 0, logo: "/tech-logos/GitHub.png" },
         { name: "Astra", x: 0, y: 150, logo: "/tech-logos/Astra.png" },
         { name: "WpForms", x: -150, y: 0, logo: "/tech-logos/wpForms.png" },
@@ -56,16 +56,10 @@ export default function TechStack() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-purple-200/20 rounded-full blur-3xl" />
       
       <div className="text-center relative z-10 py-10 w-full">
-        {/* Adjusted margin-bottom from mb-16 to mb-8 on mobile, mb-16 on desktop */}
         <h2 className="text-3xl sm:text-4xl font-black text-black mb-8 sm:mb-16 tracking-tight uppercase">
           Tech <span className="text-purple-600">Stack</span>
         </h2>
 
-        {/* 
-           RESPONSIVE CONTAINER:
-           Adjusted min-height: 400px for mobile, 600px for tablets, 850px for desktop.
-           The scaling remains to ensure the animation fits the width.
-        */}
         <div className="relative flex items-center justify-center min-h-[400px] sm:min-h-[600px] lg:min-h-[850px] w-full origin-center scale-[0.45] sm:scale-[0.65] md:scale-[0.8] lg:scale-100 transition-transform duration-500">
           
           {/* Orbit 1 - Outer */}
@@ -85,7 +79,7 @@ export default function TechStack() {
                 className="absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer group"
                 style={{ left: `calc(50% + ${planet.x}px)`, top: `calc(50% + ${planet.y}px)` }}
               >
-                <div className="w-14 h-14 bg-white border-2 border-purple-500 rounded-full flex items-center justify-center shadow-lg hover:scale-125 transition-transform duration-300 animate-bounce-slow overflow-hidden p-2.5">
+                <div className="relative w-14 h-14 bg-white border-2 border-purple-500 rounded-full flex items-center justify-center shadow-lg hover:scale-125 transition-transform duration-300 animate-bounce-slow overflow-hidden p-2.5">
                   <Image 
                     src={planet.logo} 
                     alt={`${planet.name} logo`} 
@@ -94,6 +88,10 @@ export default function TechStack() {
                     className="object-contain w-full h-full"
                   />
                 </div>
+                {/* Hover Label */}
+                <span className="absolute left-1/2 -bottom-8 -translate-x-1/2 px-2.5 py-1 bg-black text-white text-xs font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-20 shadow-md">
+                  {planet.name}
+                </span>
               </div>
             ))}
           </div>
@@ -115,7 +113,7 @@ export default function TechStack() {
                 className="absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer group"
                 style={{ left: `calc(50% + ${planet.x}px)`, top: `calc(50% + ${planet.y}px)` }}
               >
-                <div className="w-12 h-12 bg-white border-2 border-purple-500 rounded-full flex items-center justify-center shadow-lg hover:scale-125 transition-transform duration-300 animate-bounce-slow overflow-hidden p-2" style={{ animationDelay: `${idx * 0.2}s` }}>
+                <div className="relative w-12 h-12 bg-white border-2 border-purple-500 rounded-full flex items-center justify-center shadow-lg hover:scale-125 transition-transform duration-300 animate-bounce-slow overflow-hidden p-2" style={{ animationDelay: `${idx * 0.2}s` }}>
                   <Image 
                     src={planet.logo} 
                     alt={`${planet.name} logo`} 
@@ -124,6 +122,10 @@ export default function TechStack() {
                     className="object-contain w-full h-full"
                   />
                 </div>
+                {/* Hover Label */}
+                <span className="absolute left-1/2 -bottom-8 -translate-x-1/2 px-2.5 py-1 bg-black text-white text-xs font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-20 shadow-md">
+                  {planet.name}
+                </span>
               </div>
             ))}
           </div>
@@ -145,7 +147,7 @@ export default function TechStack() {
                 className="absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer group"
                 style={{ left: `calc(50% + ${planet.x}px)`, top: `calc(50% + ${planet.y}px)` }}
               >
-                <div className="w-10 h-10 bg-white border-2 border-purple-600 rounded-full flex items-center justify-center shadow-lg hover:scale-125 transition-transform duration-300 animate-bounce-slow overflow-hidden p-1.5" style={{ animationDelay: `${idx * 0.3}s` }}>
+                <div className="relative w-10 h-10 bg-white border-2 border-purple-600 rounded-full flex items-center justify-center shadow-lg hover:scale-125 transition-transform duration-300 animate-bounce-slow overflow-hidden p-1.5" style={{ animationDelay: `${idx * 0.3}s` }}>
                   <Image 
                     src={planet.logo} 
                     alt={`${planet.name} logo`} 
@@ -154,6 +156,10 @@ export default function TechStack() {
                     className="object-contain w-full h-full"
                   />
                 </div>
+                {/* Hover Label */}
+                <span className="absolute left-1/2 -bottom-8 -translate-x-1/2 px-2.5 py-1 bg-black text-white text-xs font-semibold rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-20 shadow-md">
+                  {planet.name}
+                </span>
               </div>
             ))}
           </div>

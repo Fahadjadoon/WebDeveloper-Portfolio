@@ -37,6 +37,14 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setTerminalLog("DISPATCH: TRANSMISSION_SUCCESSFUL");
+    
+    // Construct mailto link target with form contents for direct email routing to fahadjadoon50@gmail.com
+    const mailtoSubject = encodeURIComponent(`New Project Inquiry from ${formData.name}`);
+    const mailtoBody = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nProject Type: ${formData.project}\n\nMessage/Context:\n${formData.message}`
+    );
+    window.location.href = `mailto:fahadjadoon50@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+
     setTimeout(() => {
       setFormData({ name: "", project: "", email: "", message: "" });
       setTerminalLog("SYSTEM: CONNECTION_REFRESHED");
@@ -44,7 +52,6 @@ export default function Contact() {
   };
 
   return (
-    /* Swapped background variable from bg-white to bg-transparent for unified layout matrix flows */
     <section id="contact" className="min-h-screen bg-transparent w-full flex flex-col justify-center relative overflow-hidden py-24 px-6 sm:px-12 lg:px-24 z-0">
       
       {/* EDITORIAL HEADER */}
@@ -142,7 +149,7 @@ export default function Contact() {
           <div className="grid grid-cols-2 lg:grid-cols-1 gap-6">
             <div className="space-y-1.5">
               <h4 className="text-[9px] uppercase tracking-[0.2em] text-neutral-400 font-black">Direct Communication</h4>
-              <a href="mailto:" className="text-xs font-medium text-neutral-600 hover:text-purple-600 transition-colors block">
+              <a href="mailto:fahadjadoon50@gmail.com" className="text-xs font-medium text-neutral-600 hover:text-purple-600 transition-colors block">
                 fahadjadoon50@gmail.com
               </a>
             </div>
@@ -151,7 +158,7 @@ export default function Contact() {
               <h4 className="text-[9px] uppercase tracking-[0.2em] text-neutral-400 font-black">Secure Relays</h4>
               <div className="flex gap-4 text-[11px] font-bold text-neutral-400">
                 <a href="#" className="hover:text-purple-600 transition-colors">GITHUB</a>
-                <a href="#" className="hover:text-purple-600 transition-colors">LINKEDIN</a>
+                <a href="https://www.linkedin.com/in/fahad-jadoon-604612252/" className="hover:text-purple-600 transition-colors">LINKEDIN</a>
               </div>
             </div>
           </div>

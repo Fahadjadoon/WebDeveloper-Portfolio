@@ -121,7 +121,6 @@ export default function Projects() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {projectsData.map((project, idx) => {
-          // Logic for grid sizing (Big Left -> Small Right -> Small Left -> Big Right)
           const isBig = idx % 4 === 0 || idx % 4 === 3;
           return (
             <motion.div
@@ -134,11 +133,9 @@ export default function Projects() {
                 src={project.coverImage}
                 alt={project.title}
                 fill
-                // Changed object-cover to conditional based on isBig
                 className={`${isBig ? "object-cover" : "object-contain"} transition-transform duration-700 group-hover:scale-105`}
               />
 
-              {/* Dense-to-Light White Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-white/95 via-white/40 to-transparent transition-opacity duration-500" />
 
               <div className="relative z-10">
@@ -199,11 +196,26 @@ function ModalWindow({ activeProject, onClose }) {
             <div className="lg:col-span-4 space-y-8">
               <div>
                 <h4 className="text-xs uppercase tracking-widest text-neutral-400 font-black mb-3">Core Stack</h4>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {activeProject.tags.map((tag) => (
                     <span key={tag} className="text-[10px] uppercase tracking-wider font-bold text-neutral-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded">{tag}</span>
                   ))}
                 </div>
+                
+                {/* Live Project Link Tag */}
+                {activeProject.demoUrl && activeProject.demoUrl !== "#" && (
+                  <a
+                    href={activeProject.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest bg-purple-600 hover:bg-purple-700 text-white px-4 py-2.5 rounded transition-colors duration-300 shadow-lg"
+                  >
+                    <span>Live Project</span>
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                )}
               </div>
             </div>
           </div>
