@@ -54,6 +54,18 @@ const projectsData = [
   },
   {
     id: "05",
+    title: "Salbro General Contracting",
+    coverImage: "/projects/Salbro-1.png", 
+    category: "Corporate & Engineering Contracting",
+    shortDesc: "A premium, bilingual corporate platform for a UAE-based contracting and oilfield technical solutions firm, featuring advanced animations and interactive galleries.",
+    longDesc: "Engineered a premium, high-performance website for a premier engineering and contracting firm in the UAE. Built with custom HTML, Tailwind CSS, and Vanilla JavaScript, the site features a bespoke glassmorphism UI, full RTL/LTR bilingual support (English/Arabic), and fluid scroll-based animations. The platform includes custom interactive elements like a scroll progress bar, custom cursor tracking, an animated preloader, and a fully functional certificate lightbox gallery to showcase compliance and build enterprise trust.",
+    tags: ["HTML", "Tailwind CSS", "JavaScript"],
+    demoUrl: "https://salbrogcc.com/",
+    githubUrl: "#",
+    images: ["/projects/Salbro-1.png", "/projects/Salbro-2.png", "/projects/Salbro-3.png", "/projects/Salbro-4.png"]
+  },
+  {
+    id: "06",
     title: "kross Kulture",
     coverImage: "/projects/Ecommerce-1.png",
     category: "E-Commerce & Fashion Retail",
@@ -65,7 +77,7 @@ const projectsData = [
     images: ["/projects/Ecommerce-1.png", "/projects/Ecommerce-2.png", "/projects/Ecommerce-3.png"]
   },
   {
-    id: "06",
+    id: "07", 
     title: "Steps Pakistan",
     coverImage: "/projects/Steps-1.png",
     category: "Environmental & Social Consulting",
@@ -77,7 +89,7 @@ const projectsData = [
     images: ["/projects/Steps-1.png", "/projects/Steps-2.png", "/projects/Steps-3.png", "/projects/Steps-4.png"]
   },
   {
-    id: "07",
+    id: "08",
     title: "Getty",
     coverImage: "/projects/Getty-1.png",
     category: "Arts & Cultural Foundation",
@@ -88,18 +100,7 @@ const projectsData = [
     githubUrl: "#",
     images: ["/projects/Getty-1.png", "/projects/Getty-2.png"]
   },
-  {
-    id: "08",
-    title: "Savvy Technology",
-    coverImage: "/projects/Savvy-1.png",
-    category: "Technology Solutions & Consulting",
-    shortDesc: "A sleek, professional web presence for a technology-driven company, featuring custom-coded components and optimized architecture.",
-    longDesc: "Built a high-performance corporate platform for a tech-focused company using a blend of WordPress, Elementor, and custom-coded elements. The site is engineered for speed and professional impact, effectively showcasing the company’s technical expertise through a clean, modern, and highly responsive user interface designed for scalability.",
-    tags: ["WordPress", "Elementor", "Custom Code"],
-    demoUrl: "https://savvytechnologies.com/",
-    githubUrl: "#",
-    images: ["/projects/Savvy-1.png", "/projects/Savvy-2.png"]
-  },
+  
 ];
 
 export default function Projects() {
